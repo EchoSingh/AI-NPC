@@ -1,6 +1,6 @@
 #!/bin/bash
-
-# Create example NPCs for testing
+# Script: Create Example NPCs for Testing
+# Location: scripts/create_examples.sh
 
 API_URL="http://localhost:8000"
 

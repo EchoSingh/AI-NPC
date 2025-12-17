@@ -120,11 +120,16 @@ Expected response:
 
 ---
 
-## 📖 API Documentation
+## 📖 Documentation
 
-Once running, visit:
+### Interactive API Docs
 - **Swagger UI**: http://localhost:8000/docs
 - **ReDoc**: http://localhost:8000/redoc
+
+### Documentation Files
+- **[API Reference](docs/API.md)** - Complete API documentation
+- **[Examples & Usage](docs/EXAMPLES.md)** - Ready-to-use NPC examples
+- **[Contributing Guide](docs/CONTRIBUTING.md)** - How to contribute
 
 ### Core Endpoints
 
@@ -332,7 +337,33 @@ curl -X POST http://localhost:8000/quest/generate \
 
 ---
 
-## 🛠️ Development
+## � Project Structure
+
+```
+NPC/
+├── app/                    # Application source code
+│   ├── main.py             # FastAPI routes & endpoints
+│   ├── models.py           # Pydantic data models
+│   ├── memory.py           # Redis memory manager
+│   ├── personality.py      # NPC personality engine
+│   ├── llm_service.py      # LLM integration
+│   └── config.py           # Configuration management
+├── docs/                   # Documentation
+│   ├── API.md              # Complete API reference
+│   ├── EXAMPLES.md         # Usage examples
+│   └── CONTRIBUTING.md     # Contribution guidelines
+├── scripts/                # Helper scripts
+│   ├── create_examples.sh  # Create sample NPCs
+│   └── setup.sh            # Quick setup script
+├── docker-compose.yml      # Docker orchestration
+├── Dockerfile              # Container image
+├── requirements.txt        # Python dependencies
+└── README.md               # This file
+```
+
+---
+
+## �🛠️ Development
 
 ### Local Setup (Without Docker)
 
