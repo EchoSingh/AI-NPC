@@ -4,6 +4,8 @@
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.109.0-green)
 ![Docker](https://img.shields.io/badge/docker-ready-blue)
+![Docker Pulls](https://img.shields.io/docker/pulls/aditya26062003/ai-npc-system)
+![Docker Image Size](https://img.shields.io/docker/image-size/aditya26062003/ai-npc-system)
 
 > **Create intelligent, memorable NPCs with personality, memory, and dynamic quest generation powered by LLMs**
 
@@ -81,11 +83,21 @@ OLLAMA_MODEL=llama2
 
 ### 3️⃣ Launch with Docker
 
+**Option A: Using Docker Compose (Recommended)**
 ```bash
 # Build and start services
-docker-compose up --build
+docker-compose up --build -d
 
-# Or run in detached mode
+# View logs
+docker-compose logs -f
+```
+
+**Option B: Using Pre-built Docker Image**
+```bash
+# Pull from Docker Hub
+docker pull aditya26062003/ai-npc-system:latest
+
+# Run with docker-compose
 docker-compose up -d
 ```
 
@@ -460,6 +472,19 @@ NPC/
 | `API_PORT` | API server port | 8000 |
 
 ---
+
+## 🐳 Docker Hub
+
+**Pull the image:**
+```bash
+docker pull aditya26062003/ai-npc-system:latest
+```
+
+**View on Docker Hub:** https://hub.docker.com/r/aditya26062003/ai-npc-system
+
+**Available tags:**
+- `latest` - Most recent build
+- `1.0.0` - Stable release
 
 ## 🐳 Docker Commands
 
